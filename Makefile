@@ -1,6 +1,6 @@
 all: main.pdf
 
-Best_Practices.pdf: *.tex *.bib 
+main.pdf: *.tex *.bib 
 	pdflatex -interaction nonstopmode main.tex
 	bibtex main
 	pdflatex -interaction nonstopmode main.tex
