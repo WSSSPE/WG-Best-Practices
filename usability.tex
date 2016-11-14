@@ -1,36 +1,47 @@
 \section{Usability}
 \label{sec:usability}
 
-Usability is one of the attributes of sustainable software, allowing users to achieve their “goals with effectiveness, efficiency, and satisfaction” \cite[p.3]{Venters_WSSSPE}. However, usability has the reputation of being a neglected aspect of scientific software \cite{Ahmed:2014}, and of relative perceived importance to users and developers \cite{Nguyen-Hoan:2010, Hucka:2016}. Papers on best practices for scientific software often omit the subject \cite{Stodden_WSSSPE, Wilson:2016} or briefly mention a particularity of scientific software usability, such as the convenience of command-line interfaces \cite{bestprSC}. Nevertheless, there is a significant number of informative case studies and guidelines on the subject \cite{Springmeyer:1993, Pancake:1996, Javahery:2004, Schraefel:2004,Letondal:2004, Talbott:2005, Macaulay:2009, DeRoure:2009, Keefe:2010, DeMatos:2013, Ahmed:2014}.
+Usability is one of the attributes of sustainable software, allowing users to achieve their “goals with effectiveness, efficiency, and satisfaction” \cite[p.3]{Venters_WSSSPE}. However, usability has the reputation of being a neglected aspect of scientific software \cite{Ahmed:2014}, and of relative perceived importance to users and developers \cite{Nguyen-Hoan:2010, Hucka:2016}. Papers on best practices for scientific software often omit the subject \cite{Stodden_WSSSPE, Wilson:2016} or briefly mention a particularity of scientific software usability, such as the convenience of command-line interfaces \cite{bestprSC}. Nevertheless, there is a significant number of informative case studies and guidelines on the subject \cite{MacLeod:1992, Springmeyer:1993, Pancake:1996, Javahery:2004, Schraefel:2004,Letondal:2004, Talbott:2005, Macaulay:2009, DeRoure:2009, Keefe:2010, DeMatos:2013, Ahmed:2014, Beg:2016}.
 
-Scientific software usage and development present many challenges for usability design. Those can be related to development models, user-base needs and specialization, professional practices, technical constraints, and scientific demands \cite{Queiroz:2016}. As a result, computational science presents itself as an idiosyncratic field with unique and, occasionally, counterintuitive usability requirements. Throughout the next subsections, supported by documented case studies and further literature on the subject, we discuss those needs and how to address them. 
+Scientific software usage and development present many challenges for usability design. Those can be related to development models, user-base needs and specialization, professional practices, technical constraints, and scientific demands \cite{Queiroz:2016}. As a result, computational science presents itself as an idiosyncratic field with unique and, occasionally, counterintuitive usability requirements. Throughout the next subsections, supported by documented case studies and further literature on the subject, we discuss those needs and how to address them. Recommendations here presented should be complimentary to traditional usability best practices, such as Nielsen's heristics \cite{Nielsen:1994}.
 
 \subsection{Best practices recommendations}
 
-\subsubsection{Observe how users work}
+\subsubsection{Consider alternatives to graphical user interfaces}
 
-Guidelines and case studies often recommend the adoption of a user-centered design process where to develop a firm understanding on how scientists do their work. A possible path to such understanding is the Designer as Apprentice technique, in which designers are tutored by users on the meanderings of their scientific work \cite{Springmeyer:1993}.  It is also advisable to analyse that work within the environment where it actually takes place \cite{Pancake:1996}, evaluate existing tools already in use \cite{Javahery:2004}.  
+Whereas graphical user interfaces (GUI) have made software user-friendly, arguably fostering the popularization of software in general, scientific software might require alternatives that, if not more intuitive, are more apropriate and efficient depending on the user's needs – especially if they involve entering and reading from large amounts of data.  
+ 
+
+\subsubsection{Learn about how users work}
+
+Guidelines and case studies often recommend the adoption of a user-centered design process where to develop a firm understanding on how scientists do their work.  A possible path to such understanding is the Designer as Apprentice technique, in which designers are tutored by users on the meanderings of their scientific work \cite{Springmeyer:1993}.  It is also important to analyse that work within the environment where it actually takes place \cite{Pancake:1996}, evaluate existing tools which are already in use \cite{Javahery:2004}.  
 
 
 % specific communities / users
+There are specific needs that are common to many scientific software. However, there is a limit to how much can be generalized designing user interfaces for scientific software requires
 Besides designing for an actual user-base, it is advisable that scientific domain experts are brought into the design process for tool evaluation \cite{ Keefe:2010} and domain best practices \cite{Schraefel:2004,  DeMatos:2013}.
 
-% specific needs 
-Computational scientists often need specific features such as  
-
-\subsubsection{Make small, incremental changes}
-
-\subsubsection{Devise ways of entering and reading large amounts of data}
-
-\subsubsection{Offer alternatives to graphical user interfaces}
+% different profiles / specialization / customizable interfaces
 
 \subsubsection{Allow users to participate and contribute} Make it extensible
 
+% specific needs 
+
+
+\subsubsection{Make small, incremental changes}
+Making incremental changes is considered a best practice for scientific software development  \cite{bestprSC}, and the same principle should apply to user interfaces. Ideally, GUIs should be planned for frequent changes as new requisites emerge, requiring access to new functionalities and commands. 
+%MacLeod 
+
 \subsubsection{Keep UI code separate from scientific simulations}
 
-\subsubsection{Be minimalistic, but look out for special needs}
+\subsubsection{Be minimalistic, but look out for exceptional needs}
+
+Designers should be attentive to information that is particularly relevant in scientific software, but that could be eluded otherwise.    
+% include metadata?
 
 \subsubsection{Design for insight}
 
 \subsubsection{Offer ways of navigating through previous commands}
+
+
 
