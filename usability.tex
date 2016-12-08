@@ -20,22 +20,21 @@ Whereas graphical user interfaces (GUI) have made software user-friendly, arguab
  
 \note{Mention script / configuration files / command-line / DSL / from GUI to code and vice-versa}
 
+\subsubsection{Keep UI code separate from scientific simulations}
+Simulation should not be embedded in UI code. This general rule is particularly true to scientific software for many reasons: first, as previously stated, scientific software should be accessible from a number of alternative approaches; second, it should be easily ported and integrated to other software; third, keeping them separate makes reconfiguration and customization more convenient \cite{Bastos:2013}.
+
 \subsubsection{Design for small, incremental changes}
 Making incremental changes is considered a best practice for scientific software development  \cite{bestprSC}, and the same principle applies to user interfaces. Ideally, \emph{GUIs should be planned for extensibility and frequent changes} as new requisites emerge. Through incremental changes, software is more likely to \emph{stay attuned to users' needs}, not forcing them to radically change the way they work \cite{DeRoure:2009}. Regarding constant updates and addition of new functionalities, GUI components that easily extendable, such as contextual popup menus, might offer interesting solutions \cite{MacLeod:1992}. 
 
 \subsubsection{Be minimalistic, but look out for exceptional needs}
 
-Designers should be attentive to information that is particularly relevant in scientific software, but that could be eluded otherwise. \emph{Metadata}, for instance, is often required to be readable and easy to retrieve  \cite{Talbott:2005, Baxter:2006, Macaulay:2009, Keefe:2010, DeMatos:2013, bestprSC, Thomer:2016}. Additionally, despite recent trends favoring flat design over skeuomorphism, software versions of physical instruments might benefit from adopting the looks of their real-world counterparts \cite{Foster:1998}, making it easier for users to learn about their functioning.   
-
-\note{Monitoring systems and disaster contigency software should emphasize emergencial information such as system malfunctioning.} 
+Designers should be attentive to information that is particularly relevant in scientific software, but that could be eluded otherwise. \emph{Metadata}, for instance, is often required to be readable and easy to retrieve  \cite{Talbott:2005, Baxter:2006, Macaulay:2009, Keefe:2010, DeMatos:2013, bestprSC, Thomer:2016}. Additionally, despite recent trends favoring flat design over skeuomorphism, software versions of physical instruments might benefit from adopting the looks of their real-world counterparts \cite{Foster:1998}, making it easier for users to learn about their functioning.  Finally, minimalism should \emph{emphasize, rather than conceal, critical information} such as system malfunctioning \cite{Morais:2014}, emergency information \cite{Ferguson:2016}, and situations where awareness and response under time pressure are essential \cite{Aragon:2008}.  
 
 \note{Double-check DeMatos on metadata}
 
 \subsubsection{Allow users to participate and contribute} Make it extensible
 
 \subsubsection{Design for precision}
-
-\subsubsection{Keep UI code separate from scientific simulations}
 
 \subsubsection{Design for Modeling, Simulation, and Data Analysis accordingly}
 \note{Design for insight - data analysis and also providing visual tools on modeling and workflow composition}
