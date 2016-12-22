@@ -16,12 +16,16 @@ Additionally, it is advisable that scientific domain experts are brought into th
 
 \subsubsection{Consider alternatives to graphical user interfaces}
 
-Whereas graphical user interfaces (GUI) have made software user-friendly, arguably fostering the popularization of software in general, scientific software might require alternatives that, if not more intuitive, are more appropriate and efficient depending on the user's needs – especially if they involve entering and reading from large amounts of data. 
+Whereas graphical user interfaces (GUI) have made software user-friendly, arguably fostering the popularization of software in general, scientific software might require alternatives that, if not more intuitive, are more appropriate and efficient depending on the user's needs – especially if they involve entering and reading from large amounts of data. Furthermore, GUIs add an extra layer of complexity for development and documentation \cite{Smith:2016}. 
+
+Command-line interfaces are popular in computational science, as they often allow for quick repetition of tasks \cite{bestprSC}. Moreover, the analysis of large datasets can be easier and more productive when done through command-line input than through visual-based interfaces. \cite{Springmeyer:1993}. 
+
+Besides command-line interfaces, alternatives to GUI include code re-compilation, configuration files, and Domain Specific Languages (DSLs) \cite{Beg:2016}.
  
-\note{Mention script / configuration files / command-line / DSL / from GUI to code and vice-versa}
+\note{elaborate on script / configuration files / DSL }
 
 \subsubsection{Keep UI code separate from scientific simulations}
-Simulation should not be embedded in UI code. This general rule is particularly true to scientific software for many reasons: first, as previously stated, scientific software should be accessible from a number of alternative approaches; second, it should be easily ported and integrated to other software; third, keeping them separate makes reconfiguration and customization more convenient \cite{Bastos:2013}.
+Simulation should not be embedded in UI code \cite{Kelly:2009}. This rule is particularly true to scientific software for many reasons: first, as previously stated, scientific software should be accessible from a number of alternative approaches; second, it should be easily ported and integrated to other software; third, keeping them separate makes reconfiguration and customization more convenient \cite{Bastos:2013}.
 
 \subsubsection{Design for small, incremental changes}
 Making incremental changes is considered a best practice for scientific software development  \cite{bestprSC}, and the same principle applies to user interfaces. Ideally, \emph{GUIs should be planned for extensibility and frequent changes} as new requisites emerge. Through incremental changes, software is more likely to \emph{stay attuned to users' needs}, not forcing them to radically change the way they work \cite{DeRoure:2009}. Regarding constant updates and addition of new functionalities, GUI components that easily extendable, such as contextual popup menus, might offer interesting solutions \cite{MacLeod:1992}. 
