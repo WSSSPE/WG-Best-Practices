@@ -1,7 +1,7 @@
 \section{Usability}
 \label{sec:usability}
 
-Usability is one of the attributes of sustainable software, allowing users to achieve their “goals with effectiveness, efficiency, and satisfaction” \cite[p.3]{Venters_WSSSPE}. However, usability has the reputation of being a neglected aspect of scientific software \cite{Ahmed:2014}, and of relative perceived importance to users and developers \cite{Nguyen-Hoan:2010, Hucka:2016}. Papers on best practices for scientific software often omit the subject \cite{Stodden_WSSSPE, Wilson:2016} or briefly mention a particularity of scientific software usability, such as the convenience of command line interfaces \cite{bestprSC}. Nevertheless, there is a significant number of informative case studies and guidelines on the subject \cite{MacLeod:1992, Springmeyer:1993, Pancake:1996, Javahery:2004, Schraefel:2004,Letondal:2004, Talbott:2005, Macaulay:2009, DeRoure:2009, Keefe:2010, DeMatos:2013, Ahmed:2014, Beg:2016}.
+Usability is one of the attributes of sustainable software, allowing users to achieve their “goals with effectiveness, efficiency, and satisfaction” \cite[p.3]{Venters_WSSSPE}. However, usability has the reputation of being a neglected aspect of scientific software \cite{Ahmed:2014}, and of relative perceived importance to users and developers \cite{Nguyen-Hoan:2010, Hucka:2016}. Papers on best practices for scientific software often omit the subject \cite{Stodden_WSSSPE, Wilson:2016} or briefly mention a particularity of scientific software usability, such as the convenience of command line interfaces \cite{bestprSC}. Nevertheless, there is a significant number of informative case studies and guidelines on the subject \cite{MacLeod:1992, Springmeyer:1993, Pancake:1996, Javahery:2004, Schraefel:2004,Letondal:2004, Talbott:2005, Macaulay:2009, DeRoure:2009, Keefe:2010, DeMatos:2013, Ahmed:2014, Beg:2016, List:2017}.
 
 Scientific software usage and development present many challenges for usability design. Those can be related to development models, user-base needs and specialization, professional practices, technical constraints, and scientific demands \cite{Queiroz:2016}. As a result, computational science presents itself as an idiosyncratic field with unique and, occasionally, counterintuitive usability requirements. Throughout the next subsections, supported by documented case studies and further literature on the subject, we discuss those needs and how to address them. Recommendations presented here should be complimentary to traditional usability best practices, such as Nielsen's heuristics \cite{Nielsen:1994}.
 
@@ -33,14 +33,19 @@ Making incremental changes is considered a best practice for scientific software
 \subsubsection{Be minimalistic, but look out for exceptional needs}
 
 Designers should be attentive to information that is particularly relevant in scientific software, but that could be eluded otherwise. \emph{Metadata}, for instance, is often required to be readable and easy to retrieve  \cite{Talbott:2005, Baxter:2006, Macaulay:2009, Keefe:2010, DeMatos:2013, bestprSC, Thomer:2016}. Additionally, despite recent trends favoring flat design over skeuomorphism, software versions of physical instruments might benefit from adopting the looks of their real-world counterparts \cite{Foster:1998}, making it easier for users to learn about their functioning.  Finally, minimalism should \emph{emphasize, rather than conceal, critical information} such as system malfunctioning \cite{Morais:2014}, emergency information \cite{Ferguson:2016}, and situations where awareness and response under time pressure are essential \cite{Aragon:2008}.  
+\note{Add sentence on parameters / user settings informed by List:2017 }
 
 \note{Double-check DeMatos on metadata}
 
 \subsubsection{Allow users to participate and contribute} Make it extensible
+\note{include List 2017 as additional reference}
 
 \subsubsection{Design for Accuracy}
 The importance of correctness and precision  in  science demands software that allows for accuracy. This can be achieved by continuously constraining   users' input and  providing   feedback on it  \cite{Keefe:2010}. In some cases, it can be an advantage  having two input modes for a same action --- one designed for accuracy, and other one for speed \cite{MacLeod:1992}.    
 
 \subsubsection{Design for Modeling, Simulation, and Data Analysis accordingly}
 \note{Design for insight - data analysis and also providing visual tools on modeling and workflow composition}
+
+\subsubsection{Record user steps}
+\note{History and logging (informed by List 2017 and bestprSC)}
 
